@@ -98,5 +98,20 @@ namespace PracticaArbol
             }
             return contador;
         }
+
+        private TreeNode BuscarNodo(TreeNode nodo, string texto)
+        {
+            if (nodo.Text == texto)
+                return nodo;
+
+            foreach (TreeNode hijo in nodo.Nodes)
+            {
+                TreeNode r = BuscarNodo(hijo, texto);
+                if (r != null)
+                    return r;
+            }
+
+            return null;
+        }
     }
 }
