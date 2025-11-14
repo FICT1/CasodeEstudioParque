@@ -81,7 +81,22 @@ namespace PracticaArbol
 
         private void btnContar_Click(object sender, EventArgs e)
         {
+           foreach (TreeNode nodo in tvParque.Nodes)
+           {
+               int totalNodos = ContarNodos(nodo.Nodes) + 1; //para agregar la raiz CEO
+               MessageBox.Show($"El árbol tiene un total de {totalNodos} nodos.");
+            }
+        }
 
+        private int ContarNodos(TreeNodeCollection nodos)
+        {
+            int contador = 0;
+            foreach (TreeNode nodo in nodos)
+            {
+                contador++;
+                contador += ContarNodos(nodo.Nodes);
+            }
+            return contador;
         }
     }
 }
