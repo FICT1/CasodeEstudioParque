@@ -1,0 +1,11 @@
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\bin\Debug\PracticaArbol.exe.config
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\bin\Debug\PracticaArbol.exe
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\bin\Debug\PracticaArbol.pdb
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\obj\Debug\PracticaArbol.csproj.AssemblyReference.cache
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\obj\Debug\PracticaArbol.Form1.resources
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\obj\Debug\PracticaArbol.Properties.Resources.resources
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\obj\Debug\PracticaArbol.csproj.GenerateResource.cache
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\obj\Debug\PracticaArbol.csproj.CoreCompileInputs.cache
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\obj\Debug\PracticaArbol.exe
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\obj\Debug\PracticaArbol.pdb
+C:\Users\isaqu\OneDrive\Desktop\Universidad\IntProGram\2do Semestre\Semana 13\Viernes\PracticaArbol\PracticaArbol\obj\Debug\PracticaArbol.exe.config
