@@ -186,7 +186,54 @@ namespace PracticaArbol
             }
         }
 
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void tbDistancia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbDesde_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbHasta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbRutas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMostrarConexiones_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEsConexo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRutaCorta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbSalida_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarRuta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
