@@ -98,6 +98,16 @@ namespace PracticaArbol
         private void btnNivel_Click(object sender, EventArgs e)
         {
 
+            if (tvParque.SelectedNode != null)
+            {
+                int nivel = CalcularNivel(tvParque.SelectedNode);
+                MessageBox.Show($"El nodo '{tvParque.SelectedNode.Text}' está en el nivel {nivel}.");
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un nodo para calcular su nivel.");
+            }
+
         }
 
         private void btnContar_Click(object sender, EventArgs e)
@@ -133,11 +143,50 @@ namespace PracticaArbol
             }
 
             return null;
-        }
 
+        }
+        
         private void lblLugar_Click(object sender, EventArgs e)
         {
 
         }
+
+        private int CalcularNivel(TreeNode nodo)
+        {
+            int nivel = 0;
+            TreeNode actual = nodo;
+            while (actual.Parent != null)
+            {
+                nivel++;
+                actual = actual.Parent;
+            }
+            return nivel;
+        }
+
+        private void btnPreOrden_Click(object sender, EventArgs e)
+        {
+            lbRecorrido.Items.Clear();
+
+            if (tvParque.Nodes.Count > 0)
+                RecorridoPreorden(tvParque.Nodes[0], 0);
+        }
+
+
+
+        private void RecorridoPreorden(TreeNode nodo, int nivel)
+        {
+            if (nodo == null)
+                return;
+
+            lbRecorrido.Items.Add("-_" + new string(' ', nivel * 2) + nodo.Text);
+
+            foreach (TreeNode hijo in nodo.Nodes)
+            {
+                RecorridoPreorden(hijo, nivel + 1);
+            }
+        }
+
+
+
     }
 }

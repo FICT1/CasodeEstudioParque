@@ -39,21 +39,23 @@
             this.PartesTrabajo = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lbRecorrido = new System.Windows.Forms.ListBox();
+            this.btnPreOrden = new System.Windows.Forms.Button();
             this.PartesTrabajo.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tvParque
             // 
-            this.tvParque.Location = new System.Drawing.Point(32, 123);
+            this.tvParque.Location = new System.Drawing.Point(14, 127);
             this.tvParque.Name = "tvParque";
-            this.tvParque.Size = new System.Drawing.Size(307, 264);
+            this.tvParque.Size = new System.Drawing.Size(258, 264);
             this.tvParque.TabIndex = 0;
             // 
             // lblLugar
             // 
             this.lblLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLugar.Location = new System.Drawing.Point(43, 23);
+            this.lblLugar.Location = new System.Drawing.Point(267, 23);
             this.lblLugar.Name = "lblLugar";
             this.lblLugar.Size = new System.Drawing.Size(188, 39);
             this.lblLugar.TabIndex = 1;
@@ -62,7 +64,7 @@
             // 
             // tbParque
             // 
-            this.tbParque.Location = new System.Drawing.Point(32, 81);
+            this.tbParque.Location = new System.Drawing.Point(256, 84);
             this.tbParque.Name = "tbParque";
             this.tbParque.Size = new System.Drawing.Size(199, 22);
             this.tbParque.TabIndex = 2;
@@ -70,7 +72,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(257, 19);
+            this.btnAgregar.Location = new System.Drawing.Point(506, 74);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(102, 43);
             this.btnAgregar.TabIndex = 3;
@@ -80,7 +82,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(257, 74);
+            this.btnEliminar.Location = new System.Drawing.Point(552, 407);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(102, 43);
             this.btnEliminar.TabIndex = 4;
@@ -90,7 +92,7 @@
             // 
             // btnContar
             // 
-            this.btnContar.Location = new System.Drawing.Point(32, 407);
+            this.btnContar.Location = new System.Drawing.Point(14, 407);
             this.btnContar.Name = "btnContar";
             this.btnContar.Size = new System.Drawing.Size(102, 43);
             this.btnContar.TabIndex = 5;
@@ -100,7 +102,7 @@
             // 
             // btnNivel
             // 
-            this.btnNivel.Location = new System.Drawing.Point(151, 407);
+            this.btnNivel.Location = new System.Drawing.Point(134, 407);
             this.btnNivel.Name = "btnNivel";
             this.btnNivel.Size = new System.Drawing.Size(102, 43);
             this.btnNivel.TabIndex = 6;
@@ -110,7 +112,7 @@
             // 
             // btnBusqueda
             // 
-            this.btnBusqueda.Location = new System.Drawing.Point(272, 407);
+            this.btnBusqueda.Location = new System.Drawing.Point(411, 407);
             this.btnBusqueda.Name = "btnBusqueda";
             this.btnBusqueda.Size = new System.Drawing.Size(102, 43);
             this.btnBusqueda.TabIndex = 7;
@@ -122,14 +124,16 @@
             // 
             this.PartesTrabajo.Controls.Add(this.tabPage1);
             this.PartesTrabajo.Controls.Add(this.tabPage2);
-            this.PartesTrabajo.Location = new System.Drawing.Point(-1, 3);
+            this.PartesTrabajo.Location = new System.Drawing.Point(-6, -3);
             this.PartesTrabajo.Name = "PartesTrabajo";
             this.PartesTrabajo.SelectedIndex = 0;
-            this.PartesTrabajo.Size = new System.Drawing.Size(418, 522);
+            this.PartesTrabajo.Size = new System.Drawing.Size(758, 528);
             this.PartesTrabajo.TabIndex = 8;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnPreOrden);
+            this.tabPage1.Controls.Add(this.lbRecorrido);
             this.tabPage1.Controls.Add(this.btnBusqueda);
             this.tabPage1.Controls.Add(this.btnNivel);
             this.tabPage1.Controls.Add(this.tvParque);
@@ -141,7 +145,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(410, 493);
+            this.tabPage1.Size = new System.Drawing.Size(750, 499);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Parte A";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -151,17 +155,36 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(506, 544);
+            this.tabPage2.Size = new System.Drawing.Size(415, 499);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Parte B";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lbRecorrido
+            // 
+            this.lbRecorrido.FormattingEnabled = true;
+            this.lbRecorrido.ItemHeight = 16;
+            this.lbRecorrido.Location = new System.Drawing.Point(411, 127);
+            this.lbRecorrido.Name = "lbRecorrido";
+            this.lbRecorrido.Size = new System.Drawing.Size(243, 260);
+            this.lbRecorrido.TabIndex = 8;
+            // 
+            // btnPreOrden
+            // 
+            this.btnPreOrden.Location = new System.Drawing.Point(291, 236);
+            this.btnPreOrden.Name = "btnPreOrden";
+            this.btnPreOrden.Size = new System.Drawing.Size(102, 43);
+            this.btnPreOrden.TabIndex = 9;
+            this.btnPreOrden.Text = "Recorrido";
+            this.btnPreOrden.UseVisualStyleBackColor = true;
+            this.btnPreOrden.Click += new System.EventHandler(this.btnPreOrden_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(419, 526);
+            this.ClientSize = new System.Drawing.Size(688, 519);
             this.Controls.Add(this.PartesTrabajo);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -187,6 +210,8 @@
         private System.Windows.Forms.TabControl PartesTrabajo;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.ListBox lbRecorrido;
+        private System.Windows.Forms.Button btnPreOrden;
     }
 }
 
