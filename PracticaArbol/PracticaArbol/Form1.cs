@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -63,15 +64,35 @@ namespace PracticaArbol
                     MessageBox.Show("El nodo 'Presidente General (CEO)' no puede eliminarse.");
                     return;
                 }
+             
+
 
                 tvParque.SelectedNode.Remove();
                 tbParque.Clear();
+
+
             }
         }
 
         private void btnBusqueda_Click(object sender, EventArgs e)
         {
+            if (tbParque.Text == "")
+                return;
+            foreach (TreeNode nodo in tvParque.Nodes)
+                {
+                TreeNode resultado = BuscarNodo(nodo, tbParque.Text);
+                if (resultado != null)
+                {
+                    tvParque.SelectedNode = resultado;
+                    MessageBox.Show($"Nodo '{tbParque.Text}' encontrado.");
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show($"Nodo '{tbParque.Text}' no encontrado. \nPorfavor intentar nuevamente.");
 
+                }
+            }
         }
 
         private void btnNivel_Click(object sender, EventArgs e)
@@ -112,6 +133,11 @@ namespace PracticaArbol
             }
 
             return null;
+        }
+
+        private void lblLugar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

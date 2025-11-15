@@ -45,25 +45,26 @@
             // 
             // tvParque
             // 
-            this.tvParque.Location = new System.Drawing.Point(59, 123);
+            this.tvParque.Location = new System.Drawing.Point(32, 123);
             this.tvParque.Name = "tvParque";
-            this.tvParque.Size = new System.Drawing.Size(280, 264);
+            this.tvParque.Size = new System.Drawing.Size(307, 264);
             this.tvParque.TabIndex = 0;
             // 
             // lblLugar
             // 
             this.lblLugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLugar.Location = new System.Drawing.Point(70, 39);
+            this.lblLugar.Location = new System.Drawing.Point(43, 23);
             this.lblLugar.Name = "lblLugar";
-            this.lblLugar.Size = new System.Drawing.Size(121, 39);
+            this.lblLugar.Size = new System.Drawing.Size(188, 39);
             this.lblLugar.TabIndex = 1;
-            this.lblLugar.Text = "Lugar: ";
+            this.lblLugar.Text = "Innovatec Arbol";
+            this.lblLugar.Click += new System.EventHandler(this.lblLugar_Click);
             // 
             // tbParque
             // 
-            this.tbParque.Location = new System.Drawing.Point(59, 81);
+            this.tbParque.Location = new System.Drawing.Point(32, 81);
             this.tbParque.Name = "tbParque";
-            this.tbParque.Size = new System.Drawing.Size(172, 22);
+            this.tbParque.Size = new System.Drawing.Size(199, 22);
             this.tbParque.TabIndex = 2;
             this.tbParque.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -121,10 +122,10 @@
             // 
             this.PartesTrabajo.Controls.Add(this.tabPage1);
             this.PartesTrabajo.Controls.Add(this.tabPage2);
-            this.PartesTrabajo.Location = new System.Drawing.Point(-1, 12);
+            this.PartesTrabajo.Location = new System.Drawing.Point(-1, 3);
             this.PartesTrabajo.Name = "PartesTrabajo";
             this.PartesTrabajo.SelectedIndex = 0;
-            this.PartesTrabajo.Size = new System.Drawing.Size(581, 564);
+            this.PartesTrabajo.Size = new System.Drawing.Size(418, 522);
             this.PartesTrabajo.TabIndex = 8;
             // 
             // tabPage1
@@ -140,7 +141,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(573, 535);
+            this.tabPage1.Size = new System.Drawing.Size(410, 493);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Parte A";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -150,7 +151,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(573, 535);
+            this.tabPage2.Size = new System.Drawing.Size(506, 544);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Parte B";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -160,7 +161,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(573, 577);
+            this.ClientSize = new System.Drawing.Size(419, 526);
             this.Controls.Add(this.PartesTrabajo);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
