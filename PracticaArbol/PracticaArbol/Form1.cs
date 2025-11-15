@@ -222,16 +222,9 @@ namespace PracticaArbol
 
         }
 
-        private void btnMostrarConexiones_Click(object sender, EventArgs e)
+        private void btnMostrarConexiones_Click(object sender, EventArgs e, string v)
         {
-            lbSalida.Items.Clear();
-            foreach (var v in grafo.GetVertices())
-            {
-                var lista = grafo.GetConnections(v);
-                string linea = v + ": ";
-                linea += string.Join(", ", lista.Select(x => $"{x.target} ({x.weight})"));
-                lbSalida.Items.Add(linea);
-            }
+            
         }
 
         private void btnEsConexo_Click(object sender, EventArgs e)
