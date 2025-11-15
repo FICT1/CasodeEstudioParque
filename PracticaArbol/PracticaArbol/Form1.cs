@@ -19,13 +19,7 @@ namespace PracticaArbol
     public partial class Form1 : Form
     {
         TreeNode nodo;
-        Graph grafo = new Graph();
-
-
-
-
-
-
+       
         public Form1()
         {
             InitializeComponent();
@@ -222,10 +216,11 @@ namespace PracticaArbol
 
         }
 
-        private void btnMostrarConexiones_Click(object sender, EventArgs e, string v)
+        private void btnMostrarConexiones_Click(object sender, EventArgs e)
         {
-            
+            // Tu código aquí después
         }
+
 
         private void btnEsConexo_Click(object sender, EventArgs e)
         {
@@ -244,25 +239,7 @@ namespace PracticaArbol
 
         private void btnAgregarRuta_Click(object sender, EventArgs e)
         {
-            if (cbDesde.Text == "" || cbHasta.Text == "" || tbDistancia.Text == "")
-                return;
-
-            if (!int.TryParse(tbDistancia.Text, out int peso))
-            {
-                MessageBox.Show("Distancia inválida");
-                return;
-            }
-
-            grafo.AddVertex(cbDesde.Text);
-            grafo.AddVertex(cbHasta.Text);
-            grafo.AddEdge(cbDesde.Text, cbHasta.Text, peso);
-
-            lbRutas.Items.Add($"{cbDesde.Text} <-> {cbHasta.Text} ({peso})");
-
-            if (!cbDesde.Items.Contains(cbDesde.Text)) cbDesde.Items.Add(cbDesde.Text);
-            if (!cbHasta.Items.Contains(cbHasta.Text)) cbHasta.Items.Add(cbHasta.Text);
-
-            tbDistancia.Clear();
+            
         }
     }
 }
