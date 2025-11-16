@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PracticaArbol.Clases;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 
@@ -19,7 +20,8 @@ namespace PracticaArbol
     public partial class Form1 : Form
     {
         TreeNode nodo;
-       
+        Graph grafo = new Graph();
+
         public Form1()
         {
             InitializeComponent();
@@ -218,17 +220,62 @@ namespace PracticaArbol
 
         private void btnMostrarConexiones_Click(object sender, EventArgs e)
         {
-            // Tu código aquí después
+            lbSalida.Items.Clear();
+
+            if (cbDesde.Text == "")
+            {
+                MessageBox.Show("Seleccione un edificio.");
+                return;
+            }
+
+            var lista = grafo.ObtenerConexiones(cbDesde.Text);
+
+            if (lista.Count == 0)
+            {
+                lbSalida.Items.Add("Este edificio no tiene conexiones.");
+                return;
+            }
+
+            foreach (var c in lista)
+            {
+                lbSalida.Items.Add($"{cbDesde.Text} → {c.Destino} ({c.Distancia})");
+            }
         }
 
 
         private void btnEsConexo_Click(object sender, EventArgs e)
         {
 
+
+            if (grafo.EsConexo())
+                MessageBox.Show("El grafo es conexo");
+            else
+                MessageBox.Show("El grafo NO es conexo");
         }
 
         private void btnRutaCorta_Click(object sender, EventArgs e)
         {
+
+
+            lbSalida.Items.Clear();
+
+            if (cbDesde.Text == "" || cbHasta.Text == "")
+            {
+                MessageBox.Show("Seleccione un inicio y un destino.");
+                return;
+            }
+
+            var ruta = grafo.RutaMasCorta(cbDesde.Text, cbHasta.Text);
+
+            if (ruta.Count == 0)
+            {
+                lbSalida.Items.Add("No existe ruta.");
+                return;
+            }
+
+            lbSalida.Items.Add("Ruta más corta:");
+            foreach (var punto in ruta)
+                lbSalida.Items.Add(" → " + punto);
 
         }
 
@@ -240,6 +287,7 @@ namespace PracticaArbol
         private void btnAgregarRuta_Click(object sender, EventArgs e)
         {
             
+
         }
     }
 }
