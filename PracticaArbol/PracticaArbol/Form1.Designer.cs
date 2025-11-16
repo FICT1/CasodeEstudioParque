@@ -41,16 +41,14 @@
             this.btnPreOrden = new System.Windows.Forms.Button();
             this.lbRecorrido = new System.Windows.Forms.ListBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.cbHasta = new System.Windows.Forms.ComboBox();
-            this.cbDesde = new System.Windows.Forms.ComboBox();
-            this.tbDistancia = new System.Windows.Forms.TextBox();
-            this.btnAgregarRuta = new System.Windows.Forms.Button();
-            this.lbRutas = new System.Windows.Forms.ListBox();
-            this.btnMostrarConexiones = new System.Windows.Forms.Button();
-            this.btnEsConexo = new System.Windows.Forms.Button();
-            this.btnRutaCorta = new System.Windows.Forms.Button();
-            this.lbSalida = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbSalida = new System.Windows.Forms.ListBox();
+            this.btnRutaCorta = new System.Windows.Forms.Button();
+            this.btnEsConexo = new System.Windows.Forms.Button();
+            this.btnMostrarConexiones = new System.Windows.Forms.Button();
+            this.lbRutas = new System.Windows.Forms.ListBox();
+            this.btnAgregarRuta = new System.Windows.Forms.Button();
+            this.tbDistancia = new System.Windows.Forms.TextBox();
             this.PartesTrabajo.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -190,8 +188,6 @@
             this.tabPage2.Controls.Add(this.lbRutas);
             this.tabPage2.Controls.Add(this.btnAgregarRuta);
             this.tabPage2.Controls.Add(this.tbDistancia);
-            this.tabPage2.Controls.Add(this.cbDesde);
-            this.tabPage2.Controls.Add(this.cbHasta);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -201,81 +197,14 @@
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // cbHasta
+            // label1
             // 
-            this.cbHasta.FormattingEnabled = true;
-            this.cbHasta.Location = new System.Drawing.Point(485, 123);
-            this.cbHasta.Name = "cbHasta";
-            this.cbHasta.Size = new System.Drawing.Size(161, 24);
-            this.cbHasta.TabIndex = 0;
-            this.cbHasta.SelectedIndexChanged += new System.EventHandler(this.cbHasta_SelectedIndexChanged);
-            // 
-            // cbDesde
-            // 
-            this.cbDesde.FormattingEnabled = true;
-            this.cbDesde.Location = new System.Drawing.Point(86, 123);
-            this.cbDesde.Name = "cbDesde";
-            this.cbDesde.Size = new System.Drawing.Size(161, 24);
-            this.cbDesde.TabIndex = 1;
-            this.cbDesde.SelectedIndexChanged += new System.EventHandler(this.cbDesde_SelectedIndexChanged);
-            // 
-            // tbDistancia
-            // 
-            this.tbDistancia.Location = new System.Drawing.Point(234, 80);
-            this.tbDistancia.Name = "tbDistancia";
-            this.tbDistancia.Size = new System.Drawing.Size(161, 22);
-            this.tbDistancia.TabIndex = 2;
-            this.tbDistancia.TextChanged += new System.EventHandler(this.tbDistancia_TextChanged);
-            // 
-            // btnAgregarRuta
-            // 
-            this.btnAgregarRuta.Location = new System.Drawing.Point(426, 72);
-            this.btnAgregarRuta.Name = "btnAgregarRuta";
-            this.btnAgregarRuta.Size = new System.Drawing.Size(105, 38);
-            this.btnAgregarRuta.TabIndex = 3;
-            this.btnAgregarRuta.Text = "Agregar";
-            this.btnAgregarRuta.UseVisualStyleBackColor = true;
-            this.btnAgregarRuta.Click += new System.EventHandler(this.btnAgregarRuta_Click);
-            // 
-            // lbRutas
-            // 
-            this.lbRutas.FormattingEnabled = true;
-            this.lbRutas.ItemHeight = 16;
-            this.lbRutas.Location = new System.Drawing.Point(28, 162);
-            this.lbRutas.Name = "lbRutas";
-            this.lbRutas.Size = new System.Drawing.Size(252, 292);
-            this.lbRutas.TabIndex = 4;
-            this.lbRutas.SelectedIndexChanged += new System.EventHandler(this.lbRutas_SelectedIndexChanged);
-            // 
-            // btnMostrarConexiones
-            // 
-            this.btnMostrarConexiones.Location = new System.Drawing.Point(302, 172);
-            this.btnMostrarConexiones.Name = "btnMostrarConexiones";
-            this.btnMostrarConexiones.Size = new System.Drawing.Size(105, 38);
-            this.btnMostrarConexiones.TabIndex = 5;
-            this.btnMostrarConexiones.Text = "Mostrar ";
-            this.btnMostrarConexiones.UseVisualStyleBackColor = true;
-            this.btnMostrarConexiones.Click += new System.EventHandler(this.btnMostrarConexiones_Click);
-            // 
-            // btnEsConexo
-            // 
-            this.btnEsConexo.Location = new System.Drawing.Point(302, 232);
-            this.btnEsConexo.Name = "btnEsConexo";
-            this.btnEsConexo.Size = new System.Drawing.Size(105, 38);
-            this.btnEsConexo.TabIndex = 6;
-            this.btnEsConexo.Text = "Conexo";
-            this.btnEsConexo.UseVisualStyleBackColor = true;
-            this.btnEsConexo.Click += new System.EventHandler(this.btnEsConexo_Click);
-            // 
-            // btnRutaCorta
-            // 
-            this.btnRutaCorta.Location = new System.Drawing.Point(302, 300);
-            this.btnRutaCorta.Name = "btnRutaCorta";
-            this.btnRutaCorta.Size = new System.Drawing.Size(105, 38);
-            this.btnRutaCorta.TabIndex = 7;
-            this.btnRutaCorta.Text = "Ruta corta";
-            this.btnRutaCorta.UseVisualStyleBackColor = true;
-            this.btnRutaCorta.Click += new System.EventHandler(this.btnRutaCorta_Click);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(174, 64);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(348, 33);
+            this.label1.TabIndex = 9;
+            this.label1.Text = " Sistema de Rutas del Parque";
             // 
             // lbSalida
             // 
@@ -287,14 +216,63 @@
             this.lbSalida.TabIndex = 8;
             this.lbSalida.SelectedIndexChanged += new System.EventHandler(this.lbSalida_SelectedIndexChanged);
             // 
-            // label1
+            // btnRutaCorta
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(183, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(348, 33);
-            this.label1.TabIndex = 9;
-            this.label1.Text = " Sistema de Rutas del Parque";
+            this.btnRutaCorta.Location = new System.Drawing.Point(302, 300);
+            this.btnRutaCorta.Name = "btnRutaCorta";
+            this.btnRutaCorta.Size = new System.Drawing.Size(105, 38);
+            this.btnRutaCorta.TabIndex = 7;
+            this.btnRutaCorta.Text = "Ruta corta";
+            this.btnRutaCorta.UseVisualStyleBackColor = true;
+            this.btnRutaCorta.Click += new System.EventHandler(this.btnRutaCorta_Click);
+            // 
+            // btnEsConexo
+            // 
+            this.btnEsConexo.Location = new System.Drawing.Point(302, 232);
+            this.btnEsConexo.Name = "btnEsConexo";
+            this.btnEsConexo.Size = new System.Drawing.Size(105, 38);
+            this.btnEsConexo.TabIndex = 6;
+            this.btnEsConexo.Text = "Conexo";
+            this.btnEsConexo.UseVisualStyleBackColor = true;
+            this.btnEsConexo.Click += new System.EventHandler(this.btnEsConexo_Click);
+            // 
+            // btnMostrarConexiones
+            // 
+            this.btnMostrarConexiones.Location = new System.Drawing.Point(302, 172);
+            this.btnMostrarConexiones.Name = "btnMostrarConexiones";
+            this.btnMostrarConexiones.Size = new System.Drawing.Size(105, 38);
+            this.btnMostrarConexiones.TabIndex = 5;
+            this.btnMostrarConexiones.Text = "Mostrar ";
+            this.btnMostrarConexiones.UseVisualStyleBackColor = true;
+            this.btnMostrarConexiones.Click += new System.EventHandler(this.btnMostrarConexiones_Click);
+            // 
+            // lbRutas
+            // 
+            this.lbRutas.FormattingEnabled = true;
+            this.lbRutas.ItemHeight = 16;
+            this.lbRutas.Location = new System.Drawing.Point(28, 162);
+            this.lbRutas.Name = "lbRutas";
+            this.lbRutas.Size = new System.Drawing.Size(252, 292);
+            this.lbRutas.TabIndex = 4;
+            this.lbRutas.SelectedIndexChanged += new System.EventHandler(this.lbRutas_SelectedIndexChanged);
+            // 
+            // btnAgregarRuta
+            // 
+            this.btnAgregarRuta.Location = new System.Drawing.Point(472, 100);
+            this.btnAgregarRuta.Name = "btnAgregarRuta";
+            this.btnAgregarRuta.Size = new System.Drawing.Size(105, 38);
+            this.btnAgregarRuta.TabIndex = 3;
+            this.btnAgregarRuta.Text = "Agregar";
+            this.btnAgregarRuta.UseVisualStyleBackColor = true;
+            this.btnAgregarRuta.Click += new System.EventHandler(this.btnAgregarRuta_Click);
+            // 
+            // tbDistancia
+            // 
+            this.tbDistancia.Location = new System.Drawing.Point(273, 116);
+            this.tbDistancia.Name = "tbDistancia";
+            this.tbDistancia.Size = new System.Drawing.Size(161, 22);
+            this.tbDistancia.TabIndex = 2;
+            this.tbDistancia.TextChanged += new System.EventHandler(this.tbDistancia_TextChanged);
             // 
             // Form1
             // 
@@ -333,8 +311,6 @@
         private System.Windows.Forms.Button btnPreOrden;
         private System.Windows.Forms.Button btnAgregarRuta;
         private System.Windows.Forms.TextBox tbDistancia;
-        private System.Windows.Forms.ComboBox cbDesde;
-        private System.Windows.Forms.ComboBox cbHasta;
         private System.Windows.Forms.ListBox lbSalida;
         private System.Windows.Forms.Button btnRutaCorta;
         private System.Windows.Forms.Button btnEsConexo;
