@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\isaqu\\OneDrive\\Desktop\\Universidad\\IntProGram\\2do Semestre\\Semana 13\\Viernes\\PracticaArbol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B80BAED-BF77-4177-A7F9-D8737693CCCD}|PracticaArbol\\PracticaArbol.csproj|C:\\Users\\isaqu\\OneDrive\\Desktop\\Universidad\\IntProGram\\2do Semestre\\Semana 13\\Viernes\\PracticaArbol\\practicaarbol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B80BAED-BF77-4177-A7F9-D8737693CCCD}|PracticaArbol\\PracticaArbol.csproj|solutionrelative:practicaarbol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B80BAED-BF77-4177-A7F9-D8737693CCCD}|PracticaArbol\\PracticaArbol.csproj|c:\\users\\isaqu\\onedrive\\desktop\\universidad\\intprogram\\2do semestre\\semana 13\\viernes\\practicaarbol\\practicaarbol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2B80BAED-BF77-4177-A7F9-D8737693CCCD}|PracticaArbol\\PracticaArbol.csproj|solutionrelative:practicaarbol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B80BAED-BF77-4177-A7F9-D8737693CCCD}|PracticaArbol\\PracticaArbol.csproj|C:\\Users\\isaqu\\OneDrive\\Desktop\\Universidad\\IntProGram\\2do Semestre\\Semana 13\\Viernes\\PracticaArbol\\practicaarbol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B80BAED-BF77-4177-A7F9-D8737693CCCD}|PracticaArbol\\PracticaArbol.csproj|solutionrelative:practicaarbol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B80BAED-BF77-4177-A7F9-D8737693CCCD}|PracticaArbol\\PracticaArbol.csproj|C:\\Users\\isaqu\\OneDrive\\Desktop\\Universidad\\IntProGram\\2do Semestre\\Semana 13\\Viernes\\PracticaArbol\\practicaarbol\\clases\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -48,27 +48,26 @@
               "RelativeDocumentMoniker": "PracticaArbol\\Clases\\Graph.cs",
               "ToolTip": "C:\\Users\\isaqu\\OneDrive\\Desktop\\Universidad\\IntProGram\\2do Semestre\\Semana 13\\Viernes\\PracticaArbol\\PracticaArbol\\Clases\\Graph.cs",
               "RelativeToolTip": "PracticaArbol\\Clases\\Graph.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAwwCoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAADwv14AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T02:27:21.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T02:27:21.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\isaqu\\OneDrive\\Desktop\\Universidad\\IntProGram\\2do Semestre\\Semana 13\\Viernes\\PracticaArbol\\PracticaArbol\\Form1.cs",
               "RelativeDocumentMoniker": "PracticaArbol\\Form1.cs",
               "ToolTip": "C:\\Users\\isaqu\\OneDrive\\Desktop\\Universidad\\IntProGram\\2do Semestre\\Semana 13\\Viernes\\PracticaArbol\\PracticaArbol\\Form1.cs",
               "RelativeToolTip": "PracticaArbol\\Form1.cs",
-              "ViewState": "AgIAALoAAAAAAAAAAAAqwNQAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAB8BAAAAAAAAAAAkwC0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T13:33:59.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\isaqu\\OneDrive\\Desktop\\Universidad\\IntProGram\\2do Semestre\\Semana 13\\Viernes\\PracticaArbol\\PracticaArbol\\Form1.cs",
               "RelativeDocumentMoniker": "PracticaArbol\\Form1.cs",

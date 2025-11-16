@@ -8,6 +8,11 @@ namespace PracticaArbol.Clases
 {
     public class Graph
     {
+        public List<string> ObtenerNodos()
+        {
+            return grafo.Keys.ToList();
+        }
+
         public class Conexion
         {
             public string Destino;

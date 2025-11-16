@@ -210,20 +210,59 @@ namespace PracticaArbol
 
         private void btnMostrarConexiones_Click(object sender, EventArgs e)
         {
-           
+            lbSalida.Items.Clear();
+
+            var nodos = grafo.ObtenerNodos();
+
+            foreach (var nodo in nodos)
+            {
+                lbSalida.Items.Add($"Edificio: {nodo}");
+
+                var conexiones = grafo.ObtenerConexiones(nodo);
+
+                foreach (var c in conexiones)
+                {
+                    lbSalida.Items.Add($"   → {c.Destino} (distancia: {c.Distancia})");
+                }
+
+                lbSalida.Items.Add("");
+            }
         }
+
 
 
         private void btnEsConexo_Click(object sender, EventArgs e)
         {
+            lbSalida.Items.Clear();
 
+            bool conexo = grafo.EsConexo();
+
+            lbSalida.Items.Add(conexo ?
+                "El grafo ES conexo." :
+                "El grafo NO es conexo.");
         }
+
 
         private void btnRutaCorta_Click(object sender, EventArgs e)
         {
+            lbSalida.Items.Clear();
 
+            string[] partes = tbDistancia.Text.Split(',');
 
+            if (partes.Length != 2)
+            {
+                lbSalida.Items.Add("Formato correcto: ORIGEN,DESTINO");
+                return;
+            }
 
+            string origen = partes[0];
+            string destino = partes[1];
+
+            var ruta = grafo.RutaMasCorta(origen, destino);
+
+            lbSalida.Items.Add("Ruta más corta:");
+            foreach (var r in ruta)
+                lbSalida.Items.Add(" → " + r);
         }
 
         private void lbSalida_SelectedIndexChanged(object sender, EventArgs e)
@@ -233,7 +272,33 @@ namespace PracticaArbol
 
         private void btnAgregarRuta_Click(object sender, EventArgs e)
         {
-            
+            lbSalida.Items.Clear();
+
+            string entrada = tbDistancia.Text.Trim();
+            if (string.IsNullOrEmpty(entrada)) return;
+
+            string[] partes = entrada.Split(',');
+
+            if (partes.Length == 1)
+            {
+                grafo.AgregarNodo(partes[0]);
+                lbSalida.Items.Add($"Nodo agregado: {partes[0]}");
+            }
+            else if (partes.Length == 3)
+            {
+                grafo.AgregarConexion(partes[0], partes[1], int.Parse(partes[2]));
+                lbSalida.Items.Add($"Conexión agregada: {partes[0]} ↔ {partes[1]} ({partes[2]})");
+            }
+            else
+            {
+                lbSalida.Items.Add("Formato inválido. Use:");
+                lbSalida.Items.Add("Nodo: A");
+                lbSalida.Items.Add("Ruta: A,B,5");
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }
