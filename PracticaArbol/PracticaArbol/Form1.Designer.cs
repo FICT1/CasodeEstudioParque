@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tvParque = new System.Windows.Forms.TreeView();
             this.lblLugar = new System.Windows.Forms.Label();
             this.tbParque = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -46,20 +45,13 @@
             this.btnRutaCorta = new System.Windows.Forms.Button();
             this.btnEsConexo = new System.Windows.Forms.Button();
             this.btnMostrarConexiones = new System.Windows.Forms.Button();
-            this.lbRutas = new System.Windows.Forms.ListBox();
             this.btnAgregarRuta = new System.Windows.Forms.Button();
             this.tbDistancia = new System.Windows.Forms.TextBox();
+            this.tvParque = new System.Windows.Forms.TreeView();
             this.PartesTrabajo.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tvParque
-            // 
-            this.tvParque.Location = new System.Drawing.Point(14, 127);
-            this.tvParque.Name = "tvParque";
-            this.tvParque.Size = new System.Drawing.Size(258, 264);
-            this.tvParque.TabIndex = 0;
             // 
             // lblLugar
             // 
@@ -136,7 +128,7 @@
             this.PartesTrabajo.Location = new System.Drawing.Point(-6, -3);
             this.PartesTrabajo.Name = "PartesTrabajo";
             this.PartesTrabajo.SelectedIndex = 0;
-            this.PartesTrabajo.Size = new System.Drawing.Size(758, 528);
+            this.PartesTrabajo.Size = new System.Drawing.Size(693, 528);
             this.PartesTrabajo.TabIndex = 8;
             // 
             // tabPage1
@@ -185,13 +177,12 @@
             this.tabPage2.Controls.Add(this.btnRutaCorta);
             this.tabPage2.Controls.Add(this.btnEsConexo);
             this.tabPage2.Controls.Add(this.btnMostrarConexiones);
-            this.tabPage2.Controls.Add(this.lbRutas);
             this.tabPage2.Controls.Add(this.btnAgregarRuta);
             this.tabPage2.Controls.Add(this.tbDistancia);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(750, 499);
+            this.tabPage2.Size = new System.Drawing.Size(685, 499);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Parte B";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -210,15 +201,15 @@
             // 
             this.lbSalida.FormattingEnabled = true;
             this.lbSalida.ItemHeight = 16;
-            this.lbSalida.Location = new System.Drawing.Point(426, 162);
+            this.lbSalida.Location = new System.Drawing.Point(99, 172);
             this.lbSalida.Name = "lbSalida";
-            this.lbSalida.Size = new System.Drawing.Size(252, 292);
+            this.lbSalida.Size = new System.Drawing.Size(507, 292);
             this.lbSalida.TabIndex = 8;
             this.lbSalida.SelectedIndexChanged += new System.EventHandler(this.lbSalida_SelectedIndexChanged);
             // 
             // btnRutaCorta
             // 
-            this.btnRutaCorta.Location = new System.Drawing.Point(302, 300);
+            this.btnRutaCorta.Location = new System.Drawing.Point(42, 124);
             this.btnRutaCorta.Name = "btnRutaCorta";
             this.btnRutaCorta.Size = new System.Drawing.Size(105, 38);
             this.btnRutaCorta.TabIndex = 7;
@@ -228,7 +219,7 @@
             // 
             // btnEsConexo
             // 
-            this.btnEsConexo.Location = new System.Drawing.Point(302, 232);
+            this.btnEsConexo.Location = new System.Drawing.Point(42, 64);
             this.btnEsConexo.Name = "btnEsConexo";
             this.btnEsConexo.Size = new System.Drawing.Size(105, 38);
             this.btnEsConexo.TabIndex = 6;
@@ -238,7 +229,7 @@
             // 
             // btnMostrarConexiones
             // 
-            this.btnMostrarConexiones.Location = new System.Drawing.Point(302, 172);
+            this.btnMostrarConexiones.Location = new System.Drawing.Point(538, 59);
             this.btnMostrarConexiones.Name = "btnMostrarConexiones";
             this.btnMostrarConexiones.Size = new System.Drawing.Size(105, 38);
             this.btnMostrarConexiones.TabIndex = 5;
@@ -246,19 +237,9 @@
             this.btnMostrarConexiones.UseVisualStyleBackColor = true;
             this.btnMostrarConexiones.Click += new System.EventHandler(this.btnMostrarConexiones_Click);
             // 
-            // lbRutas
-            // 
-            this.lbRutas.FormattingEnabled = true;
-            this.lbRutas.ItemHeight = 16;
-            this.lbRutas.Location = new System.Drawing.Point(28, 162);
-            this.lbRutas.Name = "lbRutas";
-            this.lbRutas.Size = new System.Drawing.Size(252, 292);
-            this.lbRutas.TabIndex = 4;
-            this.lbRutas.SelectedIndexChanged += new System.EventHandler(this.lbRutas_SelectedIndexChanged);
-            // 
             // btnAgregarRuta
             // 
-            this.btnAgregarRuta.Location = new System.Drawing.Point(472, 100);
+            this.btnAgregarRuta.Location = new System.Drawing.Point(538, 124);
             this.btnAgregarRuta.Name = "btnAgregarRuta";
             this.btnAgregarRuta.Size = new System.Drawing.Size(105, 38);
             this.btnAgregarRuta.TabIndex = 3;
@@ -268,11 +249,18 @@
             // 
             // tbDistancia
             // 
-            this.tbDistancia.Location = new System.Drawing.Point(273, 116);
+            this.tbDistancia.Location = new System.Drawing.Point(257, 124);
             this.tbDistancia.Name = "tbDistancia";
             this.tbDistancia.Size = new System.Drawing.Size(161, 22);
             this.tbDistancia.TabIndex = 2;
             this.tbDistancia.TextChanged += new System.EventHandler(this.tbDistancia_TextChanged);
+            // 
+            // tvParque
+            // 
+            this.tvParque.Location = new System.Drawing.Point(14, 127);
+            this.tvParque.Name = "tvParque";
+            this.tvParque.Size = new System.Drawing.Size(258, 264);
+            this.tvParque.TabIndex = 0;
             // 
             // Form1
             // 
@@ -295,8 +283,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TreeView tvParque;
         private System.Windows.Forms.Label lblLugar;
         private System.Windows.Forms.TextBox tbParque;
         private System.Windows.Forms.Button btnAgregar;
@@ -315,8 +301,8 @@
         private System.Windows.Forms.Button btnRutaCorta;
         private System.Windows.Forms.Button btnEsConexo;
         private System.Windows.Forms.Button btnMostrarConexiones;
-        private System.Windows.Forms.ListBox lbRutas;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TreeView tvParque;
     }
 }
 
